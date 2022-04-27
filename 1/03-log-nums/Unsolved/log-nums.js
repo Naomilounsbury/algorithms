@@ -2,14 +2,9 @@
 // Assume `num` will be a positive number
 
 var logNums = function (num) {
-  if (num === 1) {
-    return 1;
-  }
-  if (num < 1) {
-    return 0;
-  }
 
-  for (var i = 1; i < num.length - 1; i++) {
+
+  for (var i = 1; i <= num; i++) {
     console.log(i);
   }
 };
