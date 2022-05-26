@@ -2,10 +2,20 @@
 
 var characterCount = function (str) {
   console.log(str);
-  let newObject = 0;
+  let newObject = {};
   for (var i = 0; i < str.length; i++) {
     const abc = /[abc]/;
-    const newString = str.split("");
-    console.log(newString);
+    const letter = str[i];
+    if (letter in newObject) {
+      newObject[letter]++;
+    } else {
+      newObject[letter] = 1;
+    }
+
+    // .map((element, index, array) => {
+    //   element.sort((a, b) => {});
+    // });
+
   }
+  return newObject
 };
